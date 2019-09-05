@@ -1,0 +1,31 @@
+size(1800,1000);
+background(0);
+noStroke();
+for(int y=0; y<=height; y=40+y){
+  for(int x=0; x<=width; x=x+40){
+    fill(225,140);
+    ellipse(x,y,40,40);
+  }
+}
+
+
+size(1800,1000);
+background(225);
+noStroke();
+for(int y=0; y<=height; y=40+y){
+  for(int x=0,i=0; x<=width; x=x+40,i=i+30){
+    fill(i);
+    ellipse(x,y,40,40);
+  }
+}
+
+
+size(1800,1000);
+background(225);
+noStroke();
+for(int y=0; y<=height; y=40+y){
+  for(int x=0,r=0,g=0,b=0; x<=width; x=x+40,r=r+30,g=g+10,b=b+40){
+    fill(r,g,b);
+    ellipse(x,y,40,40);
+  }
+}
