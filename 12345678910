@@ -1,0 +1,45 @@
+/*void draw(){
+  println("I'm drawing");
+  println(frameCount);
+}
+
+void setup(){
+  println("I'm starting");
+}
+
+void draw(){
+  println("I'm running");
+}*/
+
+/*void setup(){
+  size(480,120);
+  fill(0,102);
+  noStroke();
+}
+
+void draw(){
+  background(200);
+  ellipse(mouseX,mouseY,9,9);
+}*/
+
+/*void setup(){
+  size(480,120);
+  strokeWeight(4);
+  stroke(0,102);
+}
+
+void draw(){
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}*/
+
+void setup(){
+  size(480,120);
+  strokeWeight(4);
+  stroke(0,102);
+  fill(0,0,225,100);
+}
+
+void draw(){
+  //background(255);
+  rect(mouseX,mouseY,90,100);
+}
