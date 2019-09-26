@@ -1,0 +1,48 @@
+void setup(){
+ size(500,500);
+ strokeWeight(30);
+ }
+
+void draw(){
+ background(200);
+ stroke(255);
+ line(40,0,70,height);
+ if(mousePressed==true){
+   stroke(0);
+ }
+ else{
+   stroke(255,0,0);
+ }
+line(0,70,width,50);
+}
+
+
+
+
+
+
+/*size(500,500);
+strokeWeight(8);
+for(int i=40;i<500;i+=60){
+  ellipse(i,i,50,50);
+}*/
+void setup(){
+ size(500,500);
+ strokeWeight(30);
+ }
+
+void draw(){
+ background(200);
+ stroke(255);
+ line(40,0,70,height);
+ if(mousePressed){
+   if(mouseButton==CENTER){
+     stroke(0);
+ }
+ else{
+   stroke(255,0,0);
+ }
+ }
+ 
+line(0,70,width,50);
+}
