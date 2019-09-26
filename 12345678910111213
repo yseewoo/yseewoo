@@ -1,0 +1,23 @@
+float x;
+int offset=10;
+void setup(){
+  size(1800,900);
+  x=width/2;
+}
+void draw(){
+  background(200);
+  line(x,0,x,height);
+  if(mouseX>x){
+    x=x+0.5;
+    offset=-10;
+    
+  }
+  if(mouseX<x){
+    x=x-0.5;
+    offset=10;
+  }
+  line(mouseX,mouseY,mouseX+offset,mouseY+10);
+  line(mouseX,mouseY,mouseX+offset,mouseY-10);
+  line(mouseX,mouseY,mouseX+offset*3,mouseY);
+
+}
