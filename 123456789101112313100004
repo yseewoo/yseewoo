@@ -1,0 +1,27 @@
+int x=120;
+int y=60;
+int w=80;
+int h=60;
+
+void setup(){
+  size(860,600);
+  ellipseMode(RADIUS);
+}
+
+void draw(){
+  background(255,0,0);
+  float d=dist(mouseX,mouseY,x,y);
+  if(d<=r){
+    r++;
+    fill(0);
+  }
+  else if(mousePressed){
+    r=12;
+    fill(255);
+  }
+  else{
+    fill(255);
+  }
+  rect(x,y,r,r);
+
+ }
