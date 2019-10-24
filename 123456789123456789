@@ -1,0 +1,47 @@
+float angle = 0.0;
+float angleDirection = 1;
+float speed = 0.005;
+
+void setup(){
+  size(1800,900);
+}
+
+/*void draw(){
+  translate(mouseX,mouseY);
+  rect(0,0,30,30);
+  translate(35,10);
+  rect(0,0,15,15);
+}
+
+void draw(){
+  rotate(mouseX/100.0);
+  rect(900,300,160,20);
+}
+
+void draw(){
+  rotate(angle);
+  translate(mouseX,mouseY);
+  rect(-15,-15,30,30);
+  angle+=0.01;
+}*/
+
+void draw(){
+  background(200);
+  translate(20,25);
+  rotate(angle);
+  strokeWeight(12);
+  line(0,0,40,0);
+  translate(40,0);
+  rotate(angle*2.0);
+  strokeWeight(6);
+  line(0,0,30,0);
+  translate(30,0);
+  rotate(angle*2.5);
+  strokeWeight(3);
+  line(0,0,20,0);
+  
+  angle+=speed*angleDirection;
+  if((angle>radians(45))||(angle<0)){
+    angleDirection*=-1;
+  }
+}
